@@ -1,0 +1,84 @@
+{
+  "_from": "@pancakeswap-libs/uikit@0.29.2",
+  "_id": "@pancakeswap-libs/uikit@0.29.2",
+  "_inBundle": false,
+  "_integrity": "sha512-vhKdCTpJr7+cDiqZdppjni+SMRS52agwRO8htIkNAbWpvOquBGAyTakA9q7WwIg3Gl0lxnl0sT9flmdr8TWhjg==",
+  "_location": "/@pancakeswap-libs/uikit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@pancakeswap-libs/uikit@0.29.2",
+    "name": "@pancakeswap-libs/uikit",
+    "escapedName": "@pancakeswap-libs%2fuikit",
+    "scope": "@pancakeswap-libs",
+    "rawSpec": "0.29.2",
+    "saveSpec": null,
+    "fetchSpec": "0.29.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@pancakeswap-libs/uikit/-/uikit-0.29.2.tgz",
+  "_shasum": "246bf495b197f30e1e2794ab64ee022a95220921",
+  "_spec": "@pancakeswap-libs/uikit@0.29.2",
+  "_where": "/Users/ablaibraheem/dubaiswap",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "@types/lodash": "^4.14.168",
+    "@types/styled-system": "^5.1.10",
+    "lodash": "^4.17.20",
+    "react-popper": "^2.2.5",
+    "react-transition-group": "^4.4.1",
+    "styled-system": "^5.1.5"
+  },
+  "deprecated": false,
+  "description": "Set of UI components for pancake projects",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.5",
+    "jest-styled-components": "^7.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  },
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "name": "@pancakeswap-libs/uikit",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "start": "yarn storybook",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "test": "jest"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.29.2"
+}
